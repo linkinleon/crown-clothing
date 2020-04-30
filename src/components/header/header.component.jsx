@@ -1,5 +1,4 @@
 import React from "react";
-import { auth } from "../../firebase/firebase.utils";
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 import { connect } from "react-redux";
 import CartIcon from "../cart-icon/cart-icon.component";
@@ -9,13 +8,11 @@ import { selectCurrentUser } from "../../redux/user/user.selector";
 import { signOutStart } from '../../redux/user/user.actions'
 import {
   selectCartHidden,
-  selectCartItems,
 } from "../../redux/cart/cart.selector";
 import {
   HeaderContainer,
   LogoContainer,
   OptionsContainer,
-  OptionDiv,
   OptionLink,
 } from "./header.styles";
 
